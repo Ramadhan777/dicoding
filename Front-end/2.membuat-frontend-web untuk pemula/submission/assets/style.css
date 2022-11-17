@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    background-color: #135fd1;
+    color: white;
+    text-align: center;
+}
+
+.search-section{
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.container{
+    overflow: auto;
+}
+
+.container-row{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 35px;
+    min-height: 100px;
+}
+
+.forms,
+.on-going,
+.finished{
+    width: 95%;
+    margin: 10px auto;
+}
+
+h3{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 22px;
+    background-color: #2a9fff;
+    margin-bottom: 10px;
+}
+
+.form, 
+#inputBook,
+.books-item{
+    margin: 0px 20px 20px ;
+}
+
+input[type=text], input[type=date] {
+    font-size: 18px;
+    width: 100%;
+    background: #F5F1FF;
+    border: 2px solid #3c9fd8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.book-item{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.btn-submit, .btn-search, .undo-Button, 
+.edit-Button, .trash-Button, .check-button {
+    width: fit-content;
+    border-radius: 8px;
+    padding: 5px 15px;
+    border: 2px solid #3c9fd8;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.check-button{
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.undo-Button{
+    background-color: rgb(231, 231, 54);
+    font-weight: bold;
+}
+
+.trash-Button{
+    margin-left: 5px;
+    background-color: rgb(247, 33, 33);
+    font-weight: bold;
+}
+
+.edit-Button{
+    background-color: rgb(105, 134, 230);
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px){
+    .forms,
+    .on-going,
+    .finished{
+        width: 80%;   
+    }
+}
+@media only screen and (min-width: 1330px){
+    .forms,
+    .on-going,
+    .finished{
+        float: left;
+        width: 28%;   
+        margin: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .search-section{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .search-section{
+        width: 95%;
+    }
+}
